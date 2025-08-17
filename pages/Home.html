@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Writing Workroom | Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/Home.css" />
+  </head>
+
+  <body>
+    <div style="height: 30px; background: #523a28"></div>
+    <div class="site-title">WRITING WORKROOM</div>
+
+    <!-- =========================
+         HEADER / NAVIGATION
+         ========================= -->
+    <header class="topbar">
+      <div class="container nav">
+        <a class="nav-pill" href="">PURPOSE</a>
+        <a class="nav-pill" href="#programs">PROGRAMS</a>
+        <a class="nav-pill" href="#scheduling">SCHEDULING</a>
+        <a class="nav-pill" href="#resources">RESOURCES</a>
+        <a class="nav-pill" href="#reviews">REVIEWS</a>
+        <a class="nav-pill" href="#about">ABOUT ME</a>
+        <a class="nav-pill" href="#faq">FAQ</a>
+        <a class="nav-pill" href="#contact">CONTACT</a>
+
+        <span class="account-badge">ACCOUNT</span>
+      </div>
+    </header>
+
+    <!-- =========================
+         MAIN WORK AREA
+         ========================= -->
+    <main class="container workspace">
+      <!-- Left sticky note -->
+      <aside class="sticky sticky-left">
+        This lined paper does <strong>NOT</strong> save.
+      </aside>
+
+      <section class="paper-wrap">
+        <div
+          class="paper"
+          contenteditable="true"
+          aria-label="Lined paper editor"
+          spellcheck="false"
+        ></div>
+      </section>
+
+      <!-- Right sticky note -->
+      <aside class="sticky sticky-right">
+        There’s no machine that generates “better” text than you.<br />
+        <br />
+        You’re smarter than a machine.
+
+        <!-- Optional decorative pencil drawn with inline SVG for zero images. -->
+        <svg class="pencil" viewBox="0 0 320 56" aria-hidden="true">
+          <!-- Shaft of the pencil -->
+          <rect class="shaft" x="40" y="14" width="210" height="28" rx="6" />
+          <!-- Metal band -->
+          <rect class="band" x="250" y="14" width="22" height="28" />
+          <!-- Eraser -->
+          <rect class="eraser" x="272" y="14" width="40" height="28" rx="6" />
+          <!-- Wood tip area -->
+          <polygon class="tip-wood" points="40,14 8,28 40,42" />
+          <!-- Lead -->
+          <polygon class="lead" points="8,28 0,28 8,24" />
+        </svg>
+      </aside>
+    </main>
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <!-- Left side: legal links -->
+        <nav class="legal">
+          <a href="#privacy">Privacy and Licensing</a>
+          <a href="#terms">Terms and Conditions</a>
+          <a href="#anti-ai">Anti AI pledge</a>
+        </nav>
+        <!-- Right side: company/contact info -->
+        <div class="company">
+          <div>WRITING WORKROOM LLC</div>
+          <div>
+            EMAIL:
+            <a href="mailto:tutor@writingworkroom.com"
+              >tutor@writingworkroom.com</a
+            >
+          </div>
+          <div>CALL: +1 702 743 8131</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS-->
+    <script src="/scripts/Home.js"></script>
+  </body>
+</html>
