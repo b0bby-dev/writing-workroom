@@ -97,6 +97,11 @@ body {
   text-decoration: none;
   text-align: center;
 }
+
+.nav-pill:hover {
+  text-decoration: underline;
+}
+
 .nav-pill::before {
   content: "";
   position: absolute;
