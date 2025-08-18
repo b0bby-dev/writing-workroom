@@ -16,8 +16,11 @@
   </head>
 
   <body>
-    <div style="height: 30px; background: #523a28"></div>
-    <div class="site-title">WRITING WORKROOM</div>
+    <div>
+      <div style="height: 30px; background: #523a28"></div>
+
+      <div class="site-title">WRITING WORKROOM</div>
+    </div>
 
     <!-- =========================
          HEADER / NAVIGATION
@@ -47,12 +50,13 @@
       </aside>
 
       <section class="paper-wrap">
-        <div
+        <textarea
           class="paper"
           contenteditable="true"
           aria-label="Lined paper editor"
           spellcheck="false"
-        ></div>
+          placeholder="Start typing…"
+        ></textarea>
       </section>
 
       <!-- Right sticky note -->
@@ -90,7 +94,7 @@
         </nav>
         <!-- Right side: company/contact info -->
         <div class="company">
-          <div>WRITING WORKROOM LLC</div>
+          <div class="company-name">WRITING WORKROOM LLC</div>
           <div>
             EMAIL:
             <a href="mailto:tutor@writingworkroom.com"
