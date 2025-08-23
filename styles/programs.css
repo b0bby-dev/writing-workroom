@@ -1,0 +1,65 @@
+/* Notes container → grid layout */
+.notes-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+  margin: 42px;
+}
+
+/* Notes styling */
+.notes {
+  font-family: "Miriam Mono CLM", monospace;
+  color: #523a28;
+  width: 540px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+  margin-bottom: 6%;
+}
+
+.notes h2 {
+  font-size: 21px;
+  text-align: center;
+  padding-top: 18px;
+}
+
+.notes ul {
+  list-style: none;
+  line-height: 0;
+  margin-top: -39px;
+}
+
+.notes li {
+  font-size: 16px;
+  border-bottom: 1px solid #999;
+  padding: 24px 30px 9px;
+  margin-left: -40px;
+}
+
+.note1 {
+  background: #d3ecff;
+  margin-top: -6%;
+}
+
+.note2 {
+  background: #fffac9;
+}
+
+.note3 {
+  background: #ffe0d6;
+  margin-top: -6%;
+}
+
+.note4 {
+  background: #e2ffd9;
+  margin-left: -48%;
+}
+
+.note5 {
+  background: #f3e9ff;
+  margin-left: -48%;
+}
+
+.pencil-box {
+  width: 360px;
+  margin-left: -42%;
+}
