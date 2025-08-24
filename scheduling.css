@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: "Miriam Libre", sans-serif;
+  background: #f1e9e3;
+  color: #523a28;
+}
+
+/* Calendar Container */
+.calendar-container {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0px auto;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  background: #8d7666;
+  padding: 15px;
+}
+
+/* Book Covers */
+.calendar-header {
+  background: #523a28;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.book-covers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.book-covers img {
+  width: 450px;
+  object-fit: cover;
+  margin: 15px 30px;
+}
+
+.book-covers h2 {
+  color: #f1e9e3;
+  margin: 0 15px;
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.book-covers h2 span {
+  display: block;
+  font-size: 16px;
+}
+
+/* Ring Binder */
+.ring-binder-container {
+  background: #523a28;
+}
+
+.ring-binder {
+  width: 100%;
+}
+
+/* Calendar Grid */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  background: #3d2b1f;
+  margin-top: 10px;
+}
+
+.day {
+  background: #e1c7b3;
+  color: #523a28;
+  border: 1px solid #3d2b1f;
+  text-align: right;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  min-height: 80px;
+}
+
+/* Calendar Footer */
+.calendar-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #8d7666;
+  color: #f0f9fe;
+  height: 60px;
+}
+
+.calendar-footer button {
+  background: none;
+  border: none;
+  color: #523a28;
+  font-size: 90px;
+  padding-bottom: 9px;
+  cursor: pointer;
+}
+
+.calendar-footer button:hover {
+  color: #f2d1a8;
+}
+
+#dateLabel {
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 9px;
+}
+
+/* Day Names Row */
+.day-names {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background: #3d2b1f;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.day-names div {
+  padding: 10px;
+  border: 1px solid #3d2b1f;
+}
+
+/* Calendar Grid */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  background: #3d2b1f;
+  margin-top: 0;
+}
+
+.day {
+  background: #e1c7b3;
+  border: 1px solid #3d2b1f;
+  text-align: right;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  min-height: 80px;
+}
+
+/* Highlight today's date */
+.today {
+  background: #c04b62;
+  color: #fff;
+  border: 2px solid #fff;
+}

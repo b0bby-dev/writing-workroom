@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Writing Workroom | Home</title>
+    <title>Writing Workroom | Scheduling</title>
 
     <!-- Miriam Libre font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,12 +14,21 @@
       rel="stylesheet"
     />
 
+    <!-- Miriam Mono CLM (from CDN) -->
+    <link
+      href="https://fonts.cdnfonts.com/css/miriam-mono-clm"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="purpose.css" />
+    <link rel="stylesheet" href="programs.css">
+    <link rel="stylesheet" href="scheduling.css">
   </head>
 
   <body>
     <div>
-      <div style="height: 30px; background: #523a28"></div>
+      <div class="topmostbar"></div>
 
       <div class="site-title">
         <a class="site-title-link" href="index.html">WRITING WORKROOM</a>
@@ -44,34 +53,54 @@
       </div>
     </header>
 
-    <!-- =========================
-         MAIN WORK AREA
-         ========================= -->
-    <main class="container workspace">
-      <!-- Left sticky note -->
-      <aside class="sticky sticky-left">
-        This lined paper does <strong>NOT</strong> save.
-      </aside>
+    <!-- Main -->
+    <main>
+      <!-- Highlight Bar -->
+      <div class="highlight">SCHEDULING</div>
 
-      <section class="paper-wrap">
-        <textarea
-          class="paper"
-          contenteditable="true"
-          aria-label="Lined paper editor"
-          spellcheck="false"
-          placeholder="Start typing…"
-        ></textarea>
-      </section>
+      <!-- MAIN CONTENT -->
 
-      <!-- Right sticky note -->
-      <aside class="sticky sticky-right">
-        There’s no machine that generates “better” text than you.<br />
-        <br />
-        You’re smarter than a machine.
+ <!-- Calendar Container -->
+  <div class="calendar-container">
 
-        <img src="pencil1.png" alt="Pencil" class="pencil pencil1" />
-      </aside>
-    </main>
+    <!-- Book Row + Month Title -->
+    <div class="calendar-header">
+      <div class="book-covers">
+        <img src="books1.png" alt="Books">
+       
+        <h2 id="monthYear">SEPTEMBER<br><span>2025</span></h2>
+        
+        <img src="books2.png" alt="Books">
+      </div>
+    </div>
+
+    <!-- Ring Binder -->
+<div class="ring-binder-container">
+    <img src="ring-binder.png" alt="Ring Binder" class="ring-binder">
+</div>
+
+
+    <!-- Day Names Row -->
+    <div class="day-names">
+      <div>Sun</div>
+      <div>Mon</div>
+      <div>Tue</div>
+      <div>Wed</div>
+      <div>Thu</div>
+      <div>Fri</div>
+      <div>Sat</div>
+    </div>
+
+    <!-- Calendar Grid -->
+    <div class="calendar" id="calendar"></div>
+
+    <!-- Calendar Footer -->
+    <div class="calendar-footer">
+      <button id="prevBtn">&#8592;</button>
+      <span id="dateLabel">00/00/2025</span>
+      <button id="nextBtn">&#8594;</button>
+    </div>
+  </div> 
 
     <!-- =========================
          FOOTER
@@ -98,7 +127,7 @@
       </div>
     </footer>
 
-    <!-- JS-->
-    <script src="index.js"></script>
+    <!-- Calendar Script -->
+    <script src="scheduling.js"></script>
   </body>
 </html>
