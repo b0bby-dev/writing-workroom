@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Writing Workroom | Scheduling</title>
+    <title>Writing Workroom | Purpose</title>
 
     <!-- Miriam Libre font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,10 +20,8 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="purpose.css" />
-    <link rel="stylesheet" href="programs.css">
-    <link rel="stylesheet" href="scheduling.css">
   </head>
 
   <body>
@@ -31,7 +29,7 @@
       <div class="topmostbar"></div>
 
       <div class="site-title">
-        <a class="site-title-link" href="index.html">WRITING WORKROOM</a>
+        <a class="site-title-link" href="../index.html">WRITING WORKROOM</a>
       </div>
     </div>
 
@@ -41,8 +39,8 @@
     <header class="topbar">
       <div class="container nav">
         <a class="nav-pill" href="purpose.html">PURPOSE</a>
-        <a class="nav-pill" href="programs.html">PROGRAMS</a>
-        <a class="nav-pill" href="scheduling.html">SCHEDULING</a>
+        <a class="nav-pill" href="../programs/programs.html">PROGRAMS</a>
+        <a class="nav-pill" href="../scheduling/scheduling.html">SCHEDULING</a>
         <a class="nav-pill" href="#resources">RESOURCES</a>
         <a class="nav-pill" href="#reviews">REVIEWS</a>
         <a class="nav-pill" href="#about">ABOUT ME</a>
@@ -53,54 +51,55 @@
       </div>
     </header>
 
-    <!-- Main -->
+    <!-- Main Content -->
     <main>
       <!-- Highlight Bar -->
-      <div class="highlight">SCHEDULING</div>
+      <div class="highlight">PURPOSE</div>
 
-      <!-- MAIN CONTENT -->
+      <div class="purpose-content">
+        <img src="../images/pencil2.png" alt="Pencil" class="pencil2" />
 
- <!-- Calendar Container -->
-  <div class="calendar-container">
+        <div class="card card-left">
+          <h2>Homepage: Purpose</h2>
+          <ul>
+            <li></li>
+            <li>tktk</li>
+            <li>tktk</li>
+            <li>tktk</li>
+            <li></li>
+          </ul>
+        </div>
 
-    <!-- Book Row + Month Title -->
-    <div class="calendar-header">
-      <div class="book-covers">
-        <img src="books1.png" alt="Books">
-       
-        <h2 id="monthYear">SEPTEMBER<br><span>2025</span></h2>
-        
-        <img src="books2.png" alt="Books">
+        <div class="card card-right">
+          <h2>Writing Workroom: Purpose</h2>
+          <ul>
+            <li></li>
+            <li></li>
+            <li>tktk</li>
+            <li>tktk</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <p class="hours">HOURS OF OPERATION: Wed – Sun, 11AM – 8PM PST</p>
+        </div>
+
+        <img src="../images/pencil3.png" alt="Pencil" class="pencil3" />
+
+        <div class="card card-bottom">
+          <h2>Composing, reading, transcribing: Purpose</h2>
+          <ul>
+            <li></li>
+            <li>tktk</li>
+            <li>tktk</li>
+            <li>tktk</li>
+            <li>tktk</li>
+          </ul>
+        </div>
       </div>
-    </div>
-
-    <!-- Ring Binder -->
-<div class="ring-binder-container">
-    <img src="ring-binder.png" alt="Ring Binder" class="ring-binder">
-</div>
-
-
-    <!-- Day Names Row -->
-    <div class="day-names">
-      <div>Sun</div>
-      <div>Mon</div>
-      <div>Tue</div>
-      <div>Wed</div>
-      <div>Thu</div>
-      <div>Fri</div>
-      <div>Sat</div>
-    </div>
-
-    <!-- Calendar Grid -->
-    <div class="calendar" id="calendar"></div>
-
-    <!-- Calendar Footer -->
-    <div class="calendar-footer">
-      <button id="prevBtn">&#8592;</button>
-      <span id="dateLabel">00/00/2025</span>
-      <button id="nextBtn">&#8594;</button>
-    </div>
-  </div> 
+    </main>
 
     <!-- =========================
          FOOTER
@@ -127,7 +126,7 @@
       </div>
     </footer>
 
-    <!-- Calendar Script -->
-    <script src="scheduling.js"></script>
+    <!-- JS-->
+    <script src="index.js"></script>
   </body>
 </html>
