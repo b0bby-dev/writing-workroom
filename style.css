@@ -296,17 +296,109 @@ body {
 /* =========================
    6) RESPONSIVE ADJUSTMENTS
    ========================= */
-@media (max-width: 1000px) {
+
+/* Large screens (desktops / laptops) */
+@media (min-width: 1201px) {
+  .container {
+    max-width: var(--container);
+    margin: 0 auto;
+  }
+
   .workspace {
-    grid-template-columns: 200px 1fr 200px;
+    grid-template-columns: 2fr 1fr 3fr;
+    gap: 30px;
+  }
+
+  .paper {
+    width: 100%;
+    min-height: 1500px;
   }
 }
+
+/* Medium screens (tablets, small laptops) */
+@media (max-width: 1200px) and (min-width: 801px) {
+  .container {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  .workspace {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .sticky {
+    margin: 5% auto;
+    font-size: 18px;
+  }
+
+  .paper {
+    width: 100%;
+    min-height: 1200px;
+    padding: 24px 12px 12px 60px;
+    font-size: 15px;
+  }
+}
+
+/* Small screens (mobiles) */
 @media (max-width: 800px) {
   .workspace {
     grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 10px;
   }
+
+  .sticky {
+    margin: 15px auto;
+    font-size: 16px;
+    width: 90%;
+  }
+
   .sticky-left,
   .sticky-right {
     transform: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .paper {
+    width: 100%;
+    min-height: 800px;
+    padding: 16px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .pencil {
+    width: 150px;
+  }
+
+  .site-title {
+    font-size: 20px;
+    padding: 6px 0;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .nav-pill {
+    width: 100%;
+    max-width: 200px;
+    font-size: 14px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .company,
+  .legal {
+    text-align: center;
+    align-items: center;
   }
 }
