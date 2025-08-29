@@ -361,6 +361,21 @@ body {
   .company-name {
     font-size: 16px;
   }
+  .nav {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 4px;
+    gap: 8px;
+    justify-content: flex-start;
+    scrollbar-width: thin;
+    scrollbar-color: #a47550 #fff;
+  }
+  .nav-pill {
+    min-width: 100px;
+    width: auto;
+    display: inline-block;
+    margin-right: 8px;
+  }
 }
 
 @media (max-width: 500px) {
