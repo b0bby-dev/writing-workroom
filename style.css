@@ -314,7 +314,7 @@ body {
   .paper {
     width: 100%;
     min-width: 0;
-    padding: 24px 8px 8px 56px;
+    padding: 24px 15px 8px 56px;
   }
 }
 
@@ -323,6 +323,18 @@ body {
     grid-template-columns: 1fr;
     gap: 12px;
     padding-top: 8px;
+  }
+  .account-badge {
+    position: absolute;
+    right: -30px;
+    top: -75px;
+    background: #da5783;
+    padding: 16px 10px;
+    font-weight: 700;
+    box-shadow: 3px 3px 30px gray;
+    color: white;
+    cursor: pointer;
+    transform: translateX(-50%) rotate(-6deg);
   }
   .sticky-left,
   .sticky-right,
