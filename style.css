@@ -190,7 +190,7 @@ body {
 .sticky strong {
   font-weight: 700;
 }
-.sticky::before {
+/* .sticky::before {
   content: "";
   position: absolute;
   top: -9px;
@@ -201,7 +201,23 @@ body {
   background: var(--tape);
   border-radius: 2px;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.22);
+} */
+
+/* Pins */
+
+.sticky::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: inset -2px -2px 3px rgba(0, 0, 0, 0.2);
 }
+
 .sticky-left {
   background: var(--note-yellow);
   transform: rotate(-2.4deg);
