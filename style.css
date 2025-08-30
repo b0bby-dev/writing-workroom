@@ -342,15 +342,14 @@ body {
   }
   .account-badge {
     position: absolute;
-    right: 1%;
-    top: 1%;
-    background: #da5783;
-    padding: 8px 5px;
-    font-weight: 700;
+    top: 8px;
+    right: 8px;
+    left: auto;
+    transform: none;
+    padding: 8px 12px;
+    font-size: 16px;
     box-shadow: 3px 3px 30px gray;
-    color: white;
-    cursor: pointer;
-    transform: translateX(-50%) rotate(-6deg);
+    z-index: 1001;
   }
   .sticky-left,
   .sticky-right,
