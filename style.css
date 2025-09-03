@@ -50,12 +50,6 @@ body {
   min-height: 100vh;
 }
 
-.container {
-  width: 100%;
-  margin: 0;
-  padding-inline: 16px;
-}
-
 .topmostbar {
   height: 30px;
   background: #523a28;
@@ -92,6 +86,13 @@ body {
 .topbar {
   background: var(--topbar);
 }
+
+.container {
+  width: 100%;
+  margin: 0;
+  padding-inline: 16px;
+}
+
 .nav {
   display: flex;
   gap: 21px;
