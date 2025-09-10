@@ -1,4 +1,4 @@
-//   <!-- Calendar Script -->
+// Calendar Script
 
 const monthYear = document.getElementById("monthYear");
 const calendar = document.getElementById("calendar");

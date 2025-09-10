@@ -24,35 +24,49 @@ body {
 }
 
 .book-covers {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  flex-wrap: wrap;
+  gap: 60px;
+  height: 360px;
 }
 
-.book-covers img {
-  width: 450px;
-  object-fit: cover;
-  margin: 15px 30px;
+.book-list {
+  color: #000000;
+  transform: rotate(-15deg);
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.list2 {
+  transform: rotate(15deg);
+}
+
+.book-list span {
+  color: #ffffff;
 }
 
 .book-covers h2 {
-  color: #f1e9e3;
+  font-family: "Miriam Mono CLM";
+  color: #523a28;
   margin: 0 15px;
-  font-size: 42px;
-  font-weight: bold;
+  font-size: 36px;
+  font-weight: bolder;
   text-align: center;
+  background: #e1c7b3;
+  padding: 3px 30px;
 }
 
 .book-covers h2 span {
   display: block;
-  font-size: 16px;
+  font-size: 21px;
+  font-weight: bold;
 }
 
 /* Ring Binder */
 .ring-binder-container {
-  background: #523a28;
+  background: #f0f9fe;
 }
 
 .ring-binder {
@@ -82,20 +96,25 @@ body {
 /* Calendar Footer */
 .calendar-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background: #8d7666;
   color: #f0f9fe;
   height: 60px;
+  margin-bottom: 60px;
+}
+
+.calendar-footer span {
+  background: #523a28;
 }
 
 .calendar-footer button {
   background: none;
   border: none;
   color: #523a28;
-  font-size: 90px;
+  font-size: 150px;
   padding-bottom: 9px;
   cursor: pointer;
+  margin: 0px 30px 42px 30px;
 }
 
 .calendar-footer button:hover {
@@ -104,8 +123,8 @@ body {
 
 #dateLabel {
   font-weight: bold;
-  font-size: 18px;
-  padding-top: 9px;
+  font-size: 30px;
+  padding: 3px 45px;
 }
 
 /* Day Names Row */

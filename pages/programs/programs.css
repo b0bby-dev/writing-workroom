@@ -51,12 +51,17 @@
 
 .note4 {
   background: #e2ffd9;
-  margin-left: -48%;
+  margin-left: +15%;
 }
 
 .note5 {
+  background: #fff;
+  width: 450px;
+}
+
+.note6 {
   background: #f3e9ff;
-  margin-left: -48%;
+  margin-left: -15%;
 }
 
 .pencil-box {

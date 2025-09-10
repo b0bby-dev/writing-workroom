@@ -1,6 +1,4 @@
-/* =========================
-   1) CSS RESET + VARIABLES
-   ========================= */
+/* CSS RESET + VARIABLES */
 *,
 *::before,
 *::after {
@@ -33,9 +31,7 @@ ul {
   --container: 1100px;
 }
 
-/* =========================
-   2) GLOBAL BASE STYLES
-   ========================= */
+/* GLOBAL BASE STYLES */
 html,
 body {
   height: 100%;
@@ -80,9 +76,7 @@ body {
   padding: 3px 0px 3px 0px;
 }
 
-/* =========================
-   3) HEADER / NAVIGATION
-   ========================= */
+/* HEADER / NAVIGATION */
 .topbar {
   background: var(--topbar);
 }
@@ -164,9 +158,7 @@ body {
 }
   
 
-/* =========================
-   4) MAIN WORK AREA (3 columns)
-   ========================= */
+/* MAIN WORK AREA */
 .workspace {
   display: grid;
   grid-template-columns: 2fr 1fr 3fr;
@@ -276,9 +268,7 @@ body {
   margin-top: 150px;
 }
 
-/* =========================
-   5) FOOTER
-   ========================= */
+/* FOOTER */
 .footer {
   background: var(--bottombar);
   color: #8d7666;
@@ -321,9 +311,7 @@ body {
   font-weight: 700;
 }
 
-/* =========================
-   6) RESPONSIVE ADJUSTMENTS
-   ========================= */
+/* RESPONSIVE ADJUSTMENTS */
 @media (max-width: 1000px) {
   .workspace {
     grid-template-columns: 200px 1fr 200px;
