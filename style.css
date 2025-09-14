@@ -311,110 +311,85 @@ body {
   font-weight: 700;
 }
 
-/* RESPONSIVE ADJUSTMENTS */
-@media (max-width: 1000px) {
-  .workspace {
-    grid-template-columns: 200px 1fr 200px;
+/* Responsive styles for mobile devices */
+@media (max-width: 700px) {
+  body {
+    font-size: 15px;
+    padding: 0;
   }
-  .paper {
-    width: 100%;
-    min-width: 0;
-    padding: 24px 15px 8px 56px;
-  }
-}
 
-@media (max-width: 800px) {
-  .workspace {
+  .calendar-container,
+  .corkBoard,
+  .room {
+    width: 98%;
+    padding: 5px;
+    margin: 10px auto;
+  }
+
+  .calendar-header,
+  .highlight,
+  .site-title,
+  .footer,
+  .topbar {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .book-covers {
     grid-template-columns: 1fr;
-    gap: 12px;
-    padding-top: 8px;
+    gap: 20px;
+    height: auto;
   }
-  .account-badge {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    left: auto;
-    transform: none;
-    padding: 8px 12px;
-    font-size: 16px;
-    box-shadow: 3px 3px 30px gray;
-    z-index: 1001;
-  }
-  .sticky-left,
-  .sticky-right,
-  .sticky {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 12px;
-    font-size: 18px;
-    padding: 12px 8px;
-  }
-  .paper {
-    width: 100%;
-    min-width: 0;
-    padding: 16px 4px 4px 40px;
-    font-size: 15px;
-    line-height: 22px;
-  }
-  .highlight {
-    margin: 8px 0 0 0;
-    font-size: 18px;
-    padding: 6px 0;
-  }
-  .footer-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 8px;
-    padding-right: 8px;
-    gap: 12px;
-  }
-  .company,
-  .legal {
-    text-align: left;
-    font-size: 15px;
-    gap: 6px;
-  }
-  .company-name {
-    font-size: 16px;
-  }
-  .nav {
-    overflow-x: auto;
-    white-space: nowrap;
-    padding-bottom: 4px;
-    gap: 8px;
-    justify-content: space-between;
-    scrollbar-width: thin;
-    scrollbar-color: #a47550 #fff;
-  }
-  .nav-pill {
-    min-width: 100px;
-    width: auto;
-    display: inline-block;
-    margin-right: 8px;
-  }
-}
 
-@media (max-width: 500px) {
-  .site-title {
-    font-size: 20px;
-    padding: 6px 0;
+  .book-list {
+    max-width: 95vw;
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: left;
   }
+
+  .calendar-footer button {
+    font-size: 60px;
+    margin: 0 10px 20px 10px;
+  }
+
+  #dateLabel {
+    font-size: 18px;
+    padding: 3px 10px;
+  }
+
+  .day-names div,
+  .day {
+    font-size: 12px;
+    min-height: 40px;
+    padding: 4px;
+  }
+
+  .note {
+    width: 90vw;
+    min-width: 0;
+    left: 0 !important;
+    right: 0 !important;
+    top: unset !important;
+    margin: 10px auto !important;
+    position: static !important;
+    font-size: 13px;
+  }
+
+  .room img,
+  .room-bg img {
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
   .nav-pill {
-    width: 100px;
-    font-size: 14px;
-    height: 26px;
-  }
-  .paper {
-    padding: 8px 2px 2px 8px;
-    font-size: 14px;
-    line-height: 18px;
-  }
-  .sticky {
-    font-size: 15px;
-    padding: 8px 4px;
-  }
-  .highlight {
-    font-size: 15px;
-    padding: 4px 0;
+    font-size: 13px;
+    padding: 6px 10px;
   }
 }
