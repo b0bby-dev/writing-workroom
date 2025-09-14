@@ -310,3 +310,125 @@ body {
   font-size: 18px;
   font-weight: 700;
 }
+
+/* =========================
+   MOBILE RESPONSIVENESS
+   ========================= */
+
+/* Tablets and smaller (≤ 1024px) */
+@media (max-width: 1024px) {
+  .workspace {
+    grid-template-columns: 1fr 1fr; /* 2 columns instead of 3 */
+    gap: 20px;
+  }
+
+  .paper {
+    width: 100%;
+    min-height: 1000px;
+    padding: 24px 16px 16px 56px;
+  }
+
+  .highlight {
+    margin: 3px auto 0; /* center */
+    padding: 5px 10px;
+    font-size: 20px;
+    width: fit-content;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .nav-pill {
+    width: 140px;
+    font-size: 14px;
+  }
+
+  .account-badge {
+    right: -10px;
+    top: -55px;
+    font-size: 14px;
+    padding: 10px 8px;
+  }
+}
+
+/* Mobile screens (≤ 768px) */
+@media (max-width: 768px) {
+  .workspace {
+    grid-template-columns: 1fr; /* stack all sections */
+  }
+
+  .sticky {
+    margin: 20px auto;
+    font-size: 16px;
+    width: 85%;
+  }
+
+  .paper {
+    width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 20px 12px 12px 48px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-pill {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .site-title {
+    font-size: 22px;
+    padding: 6px 0;
+  }
+
+  .highlight {
+    font-size: 18px;
+    padding: 5px;
+    margin: 8px auto;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .legal,
+  .company {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .company-name {
+    font-size: 16px;
+  }
+}
+
+/* Extra small screens (≤ 480px) */
+@media (max-width: 480px) {
+  .site-title {
+    font-size: 18px;
+  }
+
+  .nav-pill {
+    font-size: 13px;
+    padding: 6px;
+  }
+
+  .highlight {
+    font-size: 16px;
+    padding: 4px;
+  }
+
+  .paper {
+    font-size: 13px;
+    line-height: 20px;
+    padding: 16px 10px 10px 40px;
+  }
+}
