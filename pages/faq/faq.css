@@ -1,0 +1,13 @@
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 30px auto;
+}
+
+.map img {
+  width: 80%;
+  height: auto;
+  display: block;
+}

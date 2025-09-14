@@ -1,78 +1,70 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Bulletin Board */
-.board {
-  background: url("https://i.ibb.co/zXgHd8k/cork-texture.jpg");
-  background-size: cover;
-  border: 15px solid #d8b98b;
-  margin: 20px auto;
-  padding: 20px;
-  width: 90%;
-  min-height: 500px;
+.corkBoard {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
-}
-
-/* Notes */
-.note {
-  padding: 20px;
-  width: 150px;
-  height: 150px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  font-size: 14px;
+  margin: 42px auto;
   position: relative;
 }
 
-.note.yellow {
-  background: #fff6b0;
-}
-.note.purple {
-  background: #d7c8ff;
-}
-.note.blue {
-  background: #b3d9ff;
-}
-.note.green {
-  background: #c9f7c1;
-}
-.note.pink {
-  background: #ffc4d1;
-}
-.note.grid {
-  background: repeating-linear-gradient(#fff, #fff 20px, #f0f0f0 21px),
-    repeating-linear-gradient(90deg, #fff, #fff 20px, #f0f0f0 21px);
+.note {
+  width: 180px;
+  min-height: 150px;
+  padding: 15px;
+  background: #fff8a6;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  transform: rotate(-2deg);
+  font-size: 14px;
 }
 
-/* Sizes */
-.note.small {
-  width: 100px;
-  height: 100px;
+/* Different note colors */
+.pink {
+  background: #ffd6e7;
 }
-.note.large {
-  width: 200px;
-  height: 200px;
+.blue {
+  background: #cfe9ff;
+}
+.green {
+  background: #d6ffd6;
+}
+.purple {
+  background: #e4d6ff;
 }
 
-/* Pins */
+/* Pushpin effect */
 .note::before {
   content: "";
-  width: 15px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
   background: red;
   border-radius: 50%;
   position: absolute;
-  top: 5px;
+  top: -7px;
   left: 50%;
   transform: translateX(-50%);
-  box-shadow: inset -2px -2px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.note1 {
+  top: 63px;
+  left: 450px;
+}
+.note2 {
+  top: 300px;
+  left: 480px;
+  background: #ffd6e7;
+  transform: rotate(2deg);
+}
+.note3 {
+  top: 330px;
+  right: 450px;
+  background: #cfe9ff;
+  transform: rotate(-3deg);
+}
+.note4 {
+  top: 120px;
+  right: 500px;
+  background: #e4d6ff;
+  transform: rotate(1deg);
 }

@@ -1,0 +1,71 @@
+/* Monitor */
+.monitor {
+  background: #111;
+  border-radius: 20px;
+  width: 70%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 15px;
+  position: relative;
+}
+
+.screen {
+  background: #dce6f9;
+  border-radius: 5px;
+  padding: 20px;
+  min-height: 400px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.to-field {
+  border: none;
+  background: transparent;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+textarea {
+  flex: 1;
+  resize: none;
+  border: none;
+  font-size: 14px;
+  background: transparent;
+  outline: none;
+}
+
+.send-btn {
+  align-self: flex-start;
+  background: #1e90ff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.send-btn:hover {
+  background: #005bbb;
+}
+
+/* Telephone */
+.telephone {
+  position: absolute;
+  right: 20px;
+  bottom: 100px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.telephone:hover .phone-body {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}

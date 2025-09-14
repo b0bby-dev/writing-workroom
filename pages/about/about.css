@@ -1,0 +1,65 @@
+/* Resume Box */
+.resume-box {
+  font-family: "Times New Roman";
+  background: #f2f2f2;
+  border: 3px solid #e0e0e0;
+  margin: 36px auto 60px auto;
+  padding: 30px;
+  max-width: 700px;
+  position: relative;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.resume-box h2.name {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contact-line {
+  text-align: center;
+  font-size: 14px;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.resume-box h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.resume-box p,
+.resume-box ul {
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+/* Experience Rows */
+.exp-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.date {
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+/* Profile Picture */
+.profile-pic {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  border: 5px solid #cbbef7;
+  padding: 5px;
+}
+
+.profile-pic img {
+  width: 100px;
+  height: 100px;
+}
