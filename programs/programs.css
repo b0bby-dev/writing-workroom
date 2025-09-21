@@ -9,7 +9,7 @@
 
 /* Notes styling */
 .notes {
-  font-family: "Miriam Mono CLM", monospace;
+  font-family: "Miriam Mono CLM";
   color: #523a28;
   width: 540px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
@@ -62,9 +62,4 @@
 .note6 {
   background: #f3e9ff;
   margin-left: -15%;
-}
-
-.pencil-box {
-  width: 360px;
-  margin-left: -42%;
 }
